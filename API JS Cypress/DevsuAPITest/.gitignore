@@ -1,0 +1,6 @@
+node_modules/
+Jenkinsfile
+cypress/screenshots/
+cypress/videos/
+cypress/service/tokenService.js
+cypress/downloads

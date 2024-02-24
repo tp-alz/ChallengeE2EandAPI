@@ -1,0 +1,18 @@
+{
+  "name": "devsuapitest",
+  "version": "1.0.0",
+  "description": "ApiTestCahllenge",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "npx cypress run",
+    "test:petstore": "npx cypress run --spec cypress/e2e/petstore/**",
+    "cy:open": "npx cypress open",
+    "cypress:open": "cypress open"
+  },
+  "author": "TA",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.6",
+    "@faker-js/faker": "^7.6.0"
+  }
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-02-24T15:40:50.776Z",
+        "line": 4,
+        "name": "Purchase flow test with two products",
+        "description": "",
+        "id": "purchase-flow-on-demoblaze-website;purchase-flow-test-with-two-products",
+        "after": [
+          {
+            "result": {
+              "duration": 999900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2038620000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user navigates to www.demoblaze.com",
+            "match": {
+              "location": "steps.DemoBlazeSteps.navigateToDemoBlaze()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1999025900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "adds first product to the cart",
+            "match": {
+              "location": "steps.DemoBlazeSteps.addFirstProductToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1804810900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "adds second product to the cart",
+            "match": {
+              "location": "steps.DemoBlazeSteps.addSecondProductToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 349232400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "views the cart",
+            "match": {
+              "location": "steps.DemoBlazeSteps.viewCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 899773600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "completes the purchase form",
+            "match": {
+              "location": "steps.DemoBlazeSteps.completePurchaseForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12999700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user completes the purchase successfully",
+            "match": {
+              "location": "steps.DemoBlazeSteps.itemCanBeAddedToTheCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DemoBlaze"
+          }
+        ]
+      }
+    ],
+    "name": "Purchase flow on DemoBlaze website",
+    "description": "",
+    "id": "purchase-flow-on-demoblaze-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DemoBlazePurchase.feature",
+    "tags": [
+      {
+        "name": "@DemoBlaze",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
