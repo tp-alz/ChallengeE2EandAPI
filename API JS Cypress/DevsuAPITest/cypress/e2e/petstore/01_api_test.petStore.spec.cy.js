@@ -5,7 +5,6 @@ import { addPet, getPetByID, getPetByStatus, udpatePet } from "../../service/pet
 var petData1 = getPetData();
 var petData2 = getPetData();
 
-
 describe('Add new pet', () => {
     it('Positive: Create a pet with all required fields', () => {
         cy.task('log', petData1);
@@ -17,10 +16,8 @@ describe('Add new pet', () => {
     })
 })
 
-
-
-describe('Finds previously created ped by ID', () => {
-    it('Positive: Get the pet by ID', () => {
+describe('Find pet by ID', () => {
+    it('Positive: Get a pet with valid id', () => {
         getPetByID(petData1.id).then(response => {
             expect(response.status).to.eq(200);
             expect(response.body).to.have.property('name', petData1.name);
@@ -29,9 +26,8 @@ describe('Finds previously created ped by ID', () => {
     })
 })
 
-
-describe('Updates previously created pets name and status to "sold"', () => {
-    it('Positive: Create a pet with all required fields', () => {
+describe('Update pet name and status to "sold"', () => {
+    it('Positive: Update with valid name and status', () => {
         petData1.name = petData2.name
         petData1.status = 'sold'
         cy.task('log', petData1);
@@ -43,9 +39,8 @@ describe('Updates previously created pets name and status to "sold"', () => {
     })
 })
 
-
-describe('Finds previously created ped by Status', () => {
-    it.skip('Positive: Create a pet with all required fields', () => {
+describe('Find pet by Status', () => {
+    it.skip('Positive: Get pet with expected "sold" status', () => {
         getPetByStatus(petData1.status).then(response => {
             expect(response.status).to.eq(200);
             expect(response.body).to.be.an('array');
